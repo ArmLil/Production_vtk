@@ -1,0 +1,62 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "db"
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Type": {
+    "dataSource": "dsPsql",
+    "public": true
+  },
+  "Location": {
+    "dataSource": "dsPsql",
+    "public": true
+  },
+  "Name": {
+    "dataSource": "dsPsql",
+    "public": true
+  },
+  "SerialNumber": {
+    "dataSource": "dsPsql",
+    "public": true
+  },
+  "DecimalNumber": {
+    "dataSource": "dsPsql",
+    "public": true
+  },
+  "Product": {
+    "dataSource": "dsPsql",
+    "public": true
+  }
+}

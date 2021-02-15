@@ -1,0 +1,16 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "dsPsql": {
+    "host": "localhost",
+    "port": 5432,
+    "url": "",
+    "database": "products_vtk",
+    "password": "111111",
+    "name": "dsPsql",
+    "user": "products_vtk_user",
+    "connector": "postgresql"
+  }
+}

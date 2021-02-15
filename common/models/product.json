@@ -1,0 +1,68 @@
+{
+  "name": "Product",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "number": {
+      "type": "number",
+      "required": true
+    },
+    "nameId": {
+      "type": "number"
+    },
+    "decimalNumberId": {
+      "type": "number"
+    },
+    "bookingDate": {
+      "type": "date"
+    },
+    "year": {
+      "type": "number"
+    },
+    "locationId": {
+      "type": "number"
+    },
+    "typeId": {
+      "type": "number"
+    },
+    "serialNumberId": {
+      "type": "number"
+    },
+    "note": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "type": {
+      "type": "belongsTo",
+      "model": "Type",
+      "foreignKey": "typeId"
+    },
+    "decimalNumber": {
+      "type": "belongsTo",
+      "model": "DecimalNumber",
+      "foreignKey": "decimalNumberId"
+    },
+    "location": {
+      "type": "belongsTo",
+      "model": "Location",
+      "foreignKey": "locationId"
+    },
+    "name": {
+      "type": "belongsTo",
+      "model": "Name",
+      "foreignKey": "nameId"
+    },
+    "serialNumber": {
+      "type": "belongsTo",
+      "model": "SerialNumber",
+      "foreignKey": "serialNumberId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
